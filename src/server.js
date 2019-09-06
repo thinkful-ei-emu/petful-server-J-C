@@ -3,10 +3,9 @@ const cors = require('cors');
 const dogRouter = require('./dog-router')
 const catRouter = require('./cat-router')
 
+
 const app = express();
-app.use(cors({
-  origin: CLIENT_ORIGIN
-}))
+app.use(cors())
 
 app.use('/api/dog', dogRouter)
 app.use('/api/cat', catRouter)
@@ -28,6 +27,6 @@ app.use(function (err, req, res, next) {
   });
 });
 
-app.listen(8080,()=>{
+app.listen(8080, () => {
   console.log('Serving on 8080');
 });
