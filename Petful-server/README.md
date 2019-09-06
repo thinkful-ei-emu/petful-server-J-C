@@ -1,6 +1,5 @@
-# Express Boilerplate!
+# Petful Server
 
-This is a boilerplate project used for starting new projects!
 
 ## How do set up?
 
