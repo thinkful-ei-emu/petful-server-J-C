@@ -38,6 +38,17 @@ class Queue {
     }
     return node.value;
   }
+  peek() {
+    return this.first.value;
+  }
+  isEmpty() {
+    if (this.first === null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
 }
 
 module.exports = Queue

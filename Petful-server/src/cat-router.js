@@ -9,7 +9,7 @@ catRouter.get('/', (req, res, next)=>{
   .json(cat)
 })
 
-catRouter.delete( (req, res)=>{
+catRouter.delete('/',(req, res)=>{
   PetService.deleteCat()
   return res.status(204).end()
 })

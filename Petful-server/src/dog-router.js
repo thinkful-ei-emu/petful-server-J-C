@@ -8,7 +8,7 @@ dogRouter.get('/', (req, res, next)=>{
   .status(200)
   .json(dog)
 })
-dogRouter.delete( (req, res)=>{
+dogRouter.delete('/',(req, res)=>{
   PetService.deleteDog()
   return res.status(204).end()
 
