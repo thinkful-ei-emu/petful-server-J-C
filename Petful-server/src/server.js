@@ -4,8 +4,9 @@ const dogRouter = require('./dog-router')
 const catRouter = require('./cat-router')
 
 const app = express();
-app.use(cors());
-
+app.use(cors({
+  origin: CLIENT_ORIGIN
+}))
 
 app.use('/api/dog', dogRouter)
 app.use('/api/cat', catRouter)
