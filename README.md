@@ -33,3 +33,9 @@ Run the tests in watch mode `npm test`
 ## Deploying
 
 When your new project is ready for deployment, add a new heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+
+## Endpoints
+GET /api/dog : returns first dog in the list
+GET /api/cat : returns the first cat in the list
+DELETE /api/dog : dequeues first dog
+DELETE /api/cat: dequeues first cat
