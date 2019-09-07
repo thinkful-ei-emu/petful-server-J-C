@@ -1,5 +1,15 @@
 # Petful Server
 
+Link to live app
+Link to client repo
+Link to API repo: https://github.com/thinkful-ei-emu/petful-server-J-C
+Name of your pair : Jordon and Colleen
+
+## Summary
+This app connects people with pets. People wait in a virtual line, when they reach the front of the line, they are able to adopt a pet or choose to go back to the end of the line.
+
+## Technology Used
+Express, Node.js, React.js
 
 ## How do set up?
 
