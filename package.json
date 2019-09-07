@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
+  "engines": {
+    "node": "12.6.0"
+  },
   "author": "Colleen and Jordon",
   "license": "UNLICENSED",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "deploy": "echo Hello"
   },
   "dependencies": {
     "cors": "^2.8.5",
