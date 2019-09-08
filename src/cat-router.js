@@ -3,7 +3,6 @@ const PetService = require('./pet-service')
 const catRouter = express.Router()
 
 catRouter.route('/').get((req, res, next) => {
-  PetService.deleteCat()
   const cat = PetService.getCat()
   return res
     .status(200)
@@ -11,7 +10,6 @@ catRouter.route('/').get((req, res, next) => {
 })
 
 catRouter.route('/').delete((req, res) => {
-  PetService.deleteCat()
   return res.status(204).end()
 })
 
