@@ -10,6 +10,7 @@ catRouter.route('/').get((req, res, next) => {
 })
 
 catRouter.route('/').delete((req, res) => {
+  PetService.deleteCat()
   return res.status(204).end()
 })
 
