@@ -6,7 +6,7 @@ const { NODE_ENV, CLIENT_ORIGIN } = require('./config')
 const { PORT } = require('./config')
 const app = require('./app')
 
-const app = express();
+app = express();
 app.use(cors({
   origin: CLIENT_ORIGIN
 }));
