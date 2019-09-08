@@ -4,9 +4,8 @@ const dogRouter = require('./dog-router')
 const catRouter = require('./cat-router')
 const { NODE_ENV, CLIENT_ORIGIN } = require('./config')
 const { PORT } = require('./config')
-const app = require('./app')
 
-app = express();
+const app = express();
 app.use(cors({
   origin: CLIENT_ORIGIN
 }));
