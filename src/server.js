@@ -11,9 +11,6 @@ app.use(cors({
   origin: CLIENT_ORIGIN
 }));
 
-const app = express()
-
-app.use(cors())
 
 app.use('/api/dog', dogRouter)
 app.use('/api/cat', catRouter)
