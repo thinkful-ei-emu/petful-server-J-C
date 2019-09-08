@@ -1,5 +1,15 @@
 # Petful Server
 
+Link to live app
+Link to client repo
+Link to API repo: https://github.com/thinkful-ei-emu/petful-server-J-C
+Name of your pair : Jordon and Colleen
+
+## Summary
+This app connects people with pets. People wait in a virtual line, when they reach the front of the line, they are able to adopt a pet or choose to go back to the end of the line.
+
+## Technology Used
+Express, Node.js, React.js
 
 ## How do set up?
 
@@ -23,3 +33,9 @@ Run the tests in watch mode `npm test`
 ## Deploying
 
 When your new project is ready for deployment, add a new heroku application with `heroku create`. This will make a new git remote called "heroku" and you can then `npm run deploy` which will push to this remote's master branch.
+
+## Endpoints
+GET /api/dog : returns first dog in the list
+GET /api/cat : returns the first cat in the list
+DELETE /api/dog : dequeues first dog
+DELETE /api/cat: dequeues first cat
